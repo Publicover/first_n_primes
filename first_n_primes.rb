@@ -7,7 +7,7 @@ n_primes = gets.chomp
 
 while prime_array.length < n_primes.to_i
   loop do
-    if counter == possible_prime
+    if counter == (possible_prime + 1) / 2
       prime_array << possible_prime
       possible_prime += 2
       counter = 3
@@ -21,6 +21,9 @@ while prime_array.length < n_primes.to_i
   end
 end
 
-puts "\nArray of #{n_primes} elements coming your way:\n"
+puts "\nArray of #{n_primes} elements coming your way:"
+puts "\n"
 print prime_array
+puts "\n"
 puts "\nUse this knowledge for the power of good."
+puts "\n"
