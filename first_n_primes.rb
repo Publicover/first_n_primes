@@ -7,10 +7,7 @@ n_primes = gets.chomp
 
 while prime_array.length < n_primes.to_i
   loop do
-    if possible_prime % 2 == 0
-      possible_prime += 2
-      puts "#{possible_prime} isn't prime"
-    elsif counter == possible_prime
+    if counter == possible_prime
       prime_array << possible_prime
       possible_prime += 2
       counter = 3
